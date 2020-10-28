@@ -2,8 +2,8 @@ from pygame import mixer
 from tkinter import *
 from tkinter import filedialog
 
-# mixer.init()   # This initializes the pygame's mixer 
-# mixer.music.load('filename.mp3') # Load music file
+# mixer.init() initializes the pygame's mixer 
+# mixer.music.load('filename.mp3') load a music file
 # mixer.music.play() # Play
 
 
@@ -15,16 +15,16 @@ class MusicPlayer:
         window.resizable(0,0)
 
         
-        
+        # Creating the buttons
         Load = Button(window, text = "Cargar", width = 10, font = ('Times', 10), command = self.load)   # This generates a Button to initialice a f(x)
         Play = Button(window, text = "Play", width = 10, font = ('Times', 10), command = self.play)
         Pause = Button(window, text = "Pausa", width = 10, font = ('Times', 10), command = self.pause)
         Stop = Button(window, text = "Detener", width = 10, font = ('Times', 10), command = self.stop)     
         
-        Load.place(x=30,y=20)
-        Play.place(x=120,y=20)
-        Pause.place(x=210,y=20)
-        Stop.place(x=120,y=60)  # This defines the place of Buttons
+        Load.place(x=30,y=20)    # This defines the position of the button
+        Play.place(x=120,y=20)   # This defines the position of the button
+        Pause.place(x=210,y=20)  # This defines the position of the button
+        Stop.place(x=120,y=60)   # This defines the position of the button
 
         self.music_file = False
         self.playing_state = False
@@ -48,5 +48,5 @@ class MusicPlayer:
 
 # Tkinter functions
 root = Tk()
-app= MusicPlayer(root)
+app = MusicPlayer(root)
 root.mainloop()
