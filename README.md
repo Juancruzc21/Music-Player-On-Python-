@@ -1,5 +1,5 @@
 # Music-Player-On-Python-
-A music player made with Pygame and Tkinter's library
+A music player made with Pygame and Tkinter libraries
 
 [W.I.P]
 
